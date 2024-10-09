@@ -2,8 +2,8 @@ vim.g.mapleader = " "
 -- Key mappings for NeoTree using require("neo-tree")
 local opts = { noremap = true, silent = true }
 
--- Toggle NeoTree with Ctrl + n
-vim.api.nvim_set_keymap('n', '<C-n>', [[<Cmd>lua require("neo-tree.command").execute({ toggle = true, source = "filesystem" })<CR>]], opts)
+--Keymaps to toggne nvim tree
+vim.api.nvim_set_keymap('n','<C-n>',':NvimTreeToggle<CR>',{noremap = true, silent = true})
 
 --Keymaps for telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<CR>', { noremap = true, silent = true })
