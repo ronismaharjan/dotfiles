@@ -14,4 +14,11 @@ vim.opt.backup = false        -- Disable backup file creation
 vim.opt.writebackup = false   -- Disable write backup file creation
 vim.opt.swapfile = false      -- Disable swap file creation
 vim.opt.mouse = "v"           -- Make mouse usable only in visual mode
-vim.opt.showmatch = true
+vim.opt.wrap = true           -- Enable word to wrap
+vim.opt.linebreak = true      --break word in word
+vim.opt.clipboard = "unnamedplus" --set yank to system clipboard
+vim.showmatch = true          --highlight same brackets
+-- Set the statusline format
+vim.opt.statusline = '%F %m %r %h %w %=%{&filetype} [%{getfsize(expand("%:p"))} bytes] %{strftime("%Y-%m-%d %H:%M:%S")}'
+-- Enable the statusline
+vim.opt.laststatus = 2        -- Always show the status line
