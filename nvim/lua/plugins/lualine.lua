@@ -4,7 +4,7 @@ return {
 
         require('lualine').setup {
             options = {
-                theme = 'ayu_mirage',  -- Choose your preferred theme
+                theme = 'palenight',  -- Choose your preferred theme
                 --section_separators = { left = '', right = '' },
                 --component_separators = { left = '', right = '' },
             },
