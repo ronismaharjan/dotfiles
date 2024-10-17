@@ -11,6 +11,7 @@ vim.opt.hlsearch = false       -- Highlight search results
 vim.opt.incsearch = true      -- Incremental search
 vim.opt.ignorecase = true     -- Case insensitive searching
 vim.opt.smartcase = true      -- Case sensitive if uppercase is present
+vim.opt.showmatch = true          --highlight same brackets
 
 vim.opt.linebreak = true      --break word in word
 vim.opt.wrap = true          -- Disable line wrapping
@@ -21,8 +22,8 @@ vim.opt.swapfile = false      -- Disable swap file creation
 
 vim.opt.mouse = "v"           -- Make mouse usable only in visual mode
 vim.opt.clipboard = "unnamedplus" --set yank to system clipboard
+vim.opt.scrolloff = 8         --keep 8 lines visible while scrolling 
 
-vim.opt.showmatch = true          --highlight same brackets
 vim.opt.termguicolors = true
 vim.opt.laststatus = 2        -- Always show the status line
 
