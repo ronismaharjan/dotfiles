@@ -27,6 +27,9 @@ vim.opt.scrolloff = 8         --keep 8 lines visible while scrolling
 vim.opt.termguicolors = true
 vim.opt.laststatus = 2        -- Always show the status line
 
+vim.opt.colorcolumn = "80"    --specific color will be in 80 column 
+vim.opt.updatetime = 50       --fast performance in searching and lsp
+
 -- Set the statusline format
 --vim.opt.statusline = '%F %m %r %h %w %=%{&filetype} [%{getfsize(expand("%:p"))} bytes] %{strftime("%Y-%m-%d %H:%M:%S")}'
 -- Enable the statusline

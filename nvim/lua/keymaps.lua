@@ -2,6 +2,16 @@ vim.g.mapleader = " "
 -- Key mappings for NeoTree using require("neo-tree")
 local opts = { noremap = true, silent = true }
 
+--Enable to move selected line up and down 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+--Put cursor at the middle of screen while searching and moving
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
 --Keymaps to toggne nvim tree
 vim.api.nvim_set_keymap('n','<C-n>',':NvimTreeToggle<CR>',{noremap = true, silent = true})
 
