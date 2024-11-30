@@ -1,3 +1,2 @@
-require('keymaps')
-require('lazypackagemanager')
-require('settings')
+require("ronish")
+
