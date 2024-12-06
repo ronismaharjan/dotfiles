@@ -1,6 +1,9 @@
 --Setting up leader key
 vim.g.mapleader = " "
 
+--Make ctrl c as esc key  
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
 --Enable to move selected line up and down 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -13,7 +16,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 --Keymaps to toggne nvim tree
 vim.api.nvim_set_keymap('n','<C-n>',':NvimTreeToggle<CR>',{noremap = true, silent = true})
-
 
 --Keymaps for telescope
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>lua require("telescope.builtin").find_files()<CR>', { noremap = true, silent = true })

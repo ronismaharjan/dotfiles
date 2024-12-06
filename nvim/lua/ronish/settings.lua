@@ -33,3 +33,10 @@ vim.opt.updatetime = 50       --fast performance in searching and lsp
 -- Set the statusline format
 --vim.opt.statusline = '%F %m %r %h %w %=%{&filetype} [%{getfsize(expand("%:p"))} bytes] %{strftime("%Y-%m-%d %H:%M:%S")}'
 -- Set colors for the statusline
+
+#Highlight when yank 
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        vim.highlight.on_yank({ higroup = 'IncSearch',timeout = 100 })
+    end
+})

@@ -23,7 +23,7 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 #   Setup Mod Key (shift , windows ,Alt)
 #-----------------------------------------#
 # use windows key as mod key 
-set $mod Mod4
+set $mod Mod1
 
 
 #-----------------------------------------#
